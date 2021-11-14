@@ -38,11 +38,11 @@ class Media extends Model implements Responsable, Htmlable
 
     public const TYPE_OTHER = 'other';
 
-    protected $guarded = [];
+    protected array $guarded = [];
 
-    protected $appends = ['original_url', 'preview_url'];
+    protected array $appends = ['original_url', 'preview_url'];
 
-    protected $casts = [
+    protected array $casts = [
         'manipulations' => 'array',
         'custom_properties' => 'array',
         'generated_conversions' => 'array',
